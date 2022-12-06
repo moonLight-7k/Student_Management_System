@@ -23,13 +23,13 @@ int main()
         // ===== Declaring variable (for HOME page *NOT GLOBAL*) =====
         int opt;
 
-        // clrscr();
+        // clrscr();  ====to clear the screen (only works in turbo C)====
 
         printf("\n1.Add Student Details\n 2.Preview student details \n 3.Grades of the students\n 4.Total Number of students\n");
 
         scanf("%d", &opt);
 
-        // Mani Menu in switch case
+        // =====Mani Menu in switch case=====
 
         switch (opt)
         {
@@ -68,7 +68,7 @@ int main()
             // ===== Preview students details =====
 
             printf("\n\n\xdb Details preview \xdb\n");
-            
+
             printf("\nName of the student:%s\n", sName);
             printf("\nRegistration number:%s\n", regNo);
             printf("\nDate of birth:%s\n", doB);
