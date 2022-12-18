@@ -2,6 +2,6 @@
 College Project
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
--->To add students details\n
--->Their grades\n
--->And more details about the same\n
+-->To add students details <br>
+-->Their grades<br>
+-->And more details about the same<br>
