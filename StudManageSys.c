@@ -23,83 +23,86 @@ int main()
         // For option to return to main menu
         int opt;
 
+        int choice;
         // clrscr();  ====to clear the screen (only works in turbo C)====
 
-        printf("\n1.Add Student Details\n 2.Preview student details \n 3.Grades of the students\n 4.Total Number of students\n");
-
-        scanf("%d", &opt);
-
-        // =====Mani Menu in switch case=====
-
-        switch (opt)
+        do
         {
+            printf("\n1.Add Student Details\n 2.Preview student details \n 3.Grades of the students\n 4.Total Number of students\n");
 
-            // ========= Declaring var fot students details =========
-            char sName[100], regNo[100], doB[100], fName[100], mName[100], add[100], crsEnrol[100], dofEnrol[100];
+            scanf("%d", &opt);
 
-        case 1: // ===== To Add student detail =====
+            // =====Mani Menu in switch case=====
 
-            printf("\t\t---------------|Add Student Details|---------------\t\t\n");
+            switch (opt)
+            {
 
-            printf("Name of the student:");
-            scanf("%s", &sName);
+                // ========= Declaring var fot students details =========
+                char sName[100], regNo[100], doB[100], fName[100], mName[100], add[100], crsEnrol[100], dofEnrol[100];
 
-            printf("\nRegistration number:");
-            scanf("%s", &regNo);
+            case 1: // ===== To Add student detail =====
 
-            printf("\nDate of Birth:");
-            scanf("%s", &doB);
+                printf("\t\t---------------|Add Student Details|---------------\t\t\n");
 
-            printf("\nFather's name:");
-            scanf("%s", &fName);
+                printf("Name of the student:");
+                scanf("%s", &sName);
 
-            printf("\nMother's name:");
-            scanf("%s", &mName);
+                printf("\nRegistration number:");
+                scanf("%s", &regNo);
 
-            printf("\nAddress:");
-            scanf("%s", &add);
+                printf("\nDate of Birth:");
+                scanf("%s", &doB);
 
-            printf("\nCourse enrolled:");
-            scanf("%s", &crsEnrol);
+                printf("\nFather's name:");
+                scanf("%s", &fName);
 
-            printf("\nDate of enrollment:");
-            scanf("%s", &dofEnrol);
+                printf("\nMother's name:");
+                scanf("%s", &mName);
 
-            // ===== Preview students details =====
+                printf("\nAddress:");
+                scanf("%s", &add);
 
-            printf("\n\n\xdb Details preview \xdb\n");
+                printf("\nCourse enrolled:");
+                scanf("%s", &crsEnrol);
 
-            printf("\nName of the student:%s\n", sName);
-            printf("\nRegistration number:%s\n", regNo);
-            printf("\nDate of birth:%s\n", doB);
-            printf("\nFather's name:%s\n", fName);
-            printf("\nMother's name:%s\n", mName);
-            printf("\nAddress:%s\n", add);
-            printf("\nCourse enrolled:%s\n", crsEnrol);
-            printf("\nDate of enrollment:%s\n", dofEnrol);
+                printf("\nDate of enrollment:");
+                scanf("%s", &dofEnrol);
 
-            break;
+                // ===== Preview students details =====
 
-        case 2:
-            printf("option 1");
+                printf("\n\n\xdb Details preview \xdb\n");
 
-            break;
-        case 3:
-            printf("option 1");
+                printf("\nName of the student:%s\n", sName);
+                printf("\nRegistration number:%s\n", regNo);
+                printf("\nDate of birth:%s\n", doB);
+                printf("\nFather's name:%s\n", fName);
+                printf("\nMother's name:%s\n", mName);
+                printf("\nAddress:%s\n", add);
+                printf("\nCourse enrolled:%s\n", crsEnrol);
+                printf("\nDate of enrollment:%s\n", dofEnrol);
 
-            break;
-        case 4:
-            printf("option 1");
+                break;
 
-            break;
+            case 2:
+                printf("option 1");
 
-        default:
-            printf("Invalid option");
-            break;
-        }
-        printf("Entre yes(1) for main menu or no(0)\n ");
-        scanf("%i", &choice);
-        }while(choice != 0);
+                break;
+            case 3:
+                printf("option 1");
+
+                break;
+            case 4:
+                printf("option 1");
+
+                break;
+
+            default:
+                printf("Invalid option");
+                break;
+            }
+            printf("Entre yes(1) for main menu or no(0)\n ");
+            scanf("%d", &choice);
+        } while (choice != 0);
     }
     else
     {
