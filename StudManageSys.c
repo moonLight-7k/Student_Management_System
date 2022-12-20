@@ -25,6 +25,8 @@ int main()
 
         // clrscr();  ====to clear the screen (only works in turbo C)====
 
+        int choice;
+        do{
         printf("\n1.Add Student Details\n 2.Preview student details \n 3.Grades of the students\n 4.Total Number of students\n");
 
         scanf("%d", &opt);
@@ -65,6 +67,12 @@ int main()
             printf("\nDate of enrollment:");
             scanf("%s", &dofEnrol);
 
+            
+
+            break;
+
+        case 2:
+            printf("option 1");
             // ===== Preview students details =====
 
             printf("\n\n\xdb Details preview \xdb\n");
@@ -77,11 +85,6 @@ int main()
             printf("\nAddress:%s\n", add);
             printf("\nCourse enrolled:%s\n", crsEnrol);
             printf("\nDate of enrollment:%s\n", dofEnrol);
-
-            break;
-
-        case 2:
-            printf("option 1");
 
             break;
         case 3:
@@ -97,6 +100,9 @@ int main()
             printf("Invalid option");
             break;
         }
+        printf("Entre yes(1) for main menu or no(0)\n ");
+        scanf("%i", &choice);
+        }while(choice != 0);
     }
     else
     {
