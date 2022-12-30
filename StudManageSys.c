@@ -2,6 +2,8 @@
 #include <string.h>
 #include <stdlib.h>
 
+void exit();
+
 int main()
 {
     // ======Declaring Variable for username and password (GLOBAL VARIABLE)=======
@@ -95,6 +97,9 @@ int main()
                 printf("option 1");
 
                 break;
+             case 5:
+                    exit(0);
+                 break;
 
             default:
                 printf("Invalid option");
