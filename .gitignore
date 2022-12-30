@@ -1,5 +1,5 @@
-.gitignore
-test.c
-test01.c
-a.exe
-tasks.json
+\.gitignore
+\test.c
+\test01.c
+\a.exe
+\tasks.json
