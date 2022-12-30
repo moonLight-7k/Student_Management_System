@@ -6,7 +6,7 @@ void exit();
 
 int main()
 {
-    // ======Declaring Variable for username and password (GLOBAL VARIABLE)=======
+    // ======Declaring Variable for username and password=======
     char userName[50], pwd[50];
 
     // =======(\xdb) is used to display better UI=======
