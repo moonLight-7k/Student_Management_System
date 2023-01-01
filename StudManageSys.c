@@ -11,7 +11,7 @@ int main()
     char userName[50], pwd[50];
 
     // ===========================================|(\xdb) is used to display better UI|===========================================
-    printf("\n \xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb  LOGIN FIRST \xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\n ");
+    printf("\n \xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb LOGIN \xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\n ");
 
     printf("Username:");
     scanf("%s", &userName);
@@ -34,7 +34,7 @@ int main()
             //  ===================================|to clear the screen (only works in turbo C)|===================================
             int opt;
 
-            printf("\n1.Add Student Details\n 2.Preview student details \n 3.Grades of the students\n 4.Total Number of students\n 5. Exit\n");
+            printf("\n 1.Add Student Details\n 2.Preview student details \n 3.Grades of the students\n 4.Total Number of students\n 5. Exit\n");
 
             scanf("%d", &opt);
 
@@ -55,7 +55,7 @@ int main()
                 printf("\t\t---------------|Add Student Details|---------------\t\t\n");
 
                 printf("Name of the student:");
-                scanf("%[^\n]%*c", sName);
+                scanf("%s", sName);
 
                 printf("\nRegistration number:");
                 scanf("%s", regNo);
@@ -102,7 +102,7 @@ int main()
                 printf("\t\t---------------|Add student name and grade|---------------\t\t\n");
 
                 printf("Name of the student:");
-                scanf("%[^\n]%*c", sName);
+                scanf("%s", sName);
 
                 printf("\nRegistration number:");
                 scanf("%s", regNo);
@@ -129,7 +129,7 @@ int main()
                 float sum = Maths + PPS + EE + Phy + softSkill;
                 float percentage = (sum / 500) * 100;
 
-                printf("Your overall percent is %f\% \n", percentage);
+                printf("Your overall percent is %f%% \n", percentage);
 
                 if (percentage >= 95 && percentage < 100)
                 {
