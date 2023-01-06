@@ -77,6 +77,8 @@ int main()
 
                 printf("\nDate of enrollment:");
                 scanf("%s", dofEnrol);
+
+                //===================|To Count  Student|=======================
                 count++;
                 break;
 
