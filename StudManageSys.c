@@ -7,10 +7,10 @@ void exit();
 
 int main()
 {
-    // =============================|Declaring Variable for username and password (GLOBAL VARIABLE)|==============================
+    // <=============================|Declaring Variable for username and password (GLOBAL VARIABLE)|==============================>
     char userName[50], pwd[50];
 
-    // ===========================================|(\xdb) is used to display better UI|===========================================
+    // <===========================================|(\xdb) is used to display better UI|===========================================>
     printf("\n \xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb LOGIN \xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\n ");
 
     printf("Username:");
@@ -20,7 +20,7 @@ int main()
     scanf("%s", &pwd);
 
     if (strcmp(userName, "KCCITM") == 0 && strcmp(pwd, "admin@123") == 0 || strcmp(userName, "root") == 0 && strcmp(pwd, "exit") == 0)
-    // ==============================================|(strcmp) is used to compare string|==============================================
+    // <=============================================|(strcmp) is used to compare string|=============================================>
 
     {
         int choice;
@@ -28,34 +28,33 @@ int main()
 
         do
         {
-            // ========================================|Declaring variable (for HOME page)|========================================
+            // <========================================|Declaring variable (for HOME page)|========================================>
 
             // clrscr();
-            //  ===================================|to clear the screen (only works in turbo C)|===================================
+            //  <===================================|to clear the screen (only works in turbo C)|===================================>
             int opt;
 
             printf("\n 1.Add Student Details\n 2.Preview student details \n 3.Grades of the students\n 4.Total Number of students\n 5. Exit\n");
 
             scanf("%d", &opt);
 
-            // ============================================|Mani Menu in switch case|============================================
+            // <============================================|Mani Menu in switch case|============================================>
 
             switch (opt)
             {
 
-                // ====================================|Declaring var fot students details|====================================
-                char sName[100], regNo[100], doB[100], fName[100], mName[100], add[100], crsEnrol[100], dofEnrol[100];
+                // <====================================|Declaring var fot students details|====================================>
+                char sName[50], regNo[50], doB[50], fName[50], mName[50], add[50], crsEnrol[50], dofEnrol[50];
 
-                // ==========================================|Variable for Grades|=============================================
-                float Maths, PPS, EE, Phy, softSkill;
+                // <==========================================|Variable for Grades|=============================================>
+                float Maths, PPS, EE, Phy, softSkill, sum, percentage;
 
-                // ===========================================|To Add student detail|===========================================
+                // <===========================================|To Add student detail|===========================================>
             case 1:
-
                 printf("\t\t---------------|Add Student Details|---------------\t\t\n");
 
                 printf("Name of the student:");
-                scanf("%s", sName);
+                scanf("%*[^\n]%c", sName);
 
                 printf("\nRegistration number:");
                 scanf("%s", regNo);
@@ -78,16 +77,15 @@ int main()
                 printf("\nDate of enrollment:");
                 scanf("%s", dofEnrol);
 
-                //===================|To Count  Student|=======================
+                // <==========================================|To Count Number  Student|===========================================>
                 count++;
                 break;
 
             case 2:
-                // ======================================|Preview students details|======================================
+                // <======================================|Preview students details|======================================>
 
                 printf("\n\n\xdb Details preview \xdb\n");
-
-                printf("\nName of the student:%s\n", sName);
+                printf("\nName of the student: %s \n", sName);
                 printf("\nRegistration number:%s\n", regNo);
                 printf("\nDate of birth:%s\n", doB);
                 printf("\nFather's name:%s\n", fName);
@@ -97,9 +95,10 @@ int main()
                 printf("\nDate of enrollment:%s\n", dofEnrol);
 
                 break;
+
             case 3:
 
-                // ======================================|Preview students Grade|======================================
+                // <======================================|Preview students Grade|======================================>
 
                 printf("\t\t---------------|Add student name and grade|---------------\t\t\n");
 
@@ -126,10 +125,10 @@ int main()
                 printf("Soft Skill:");
                 scanf("%f", &softSkill);
 
-                // ===========================================|Calculation of grades|======================================
+                // <===========================================|Calculation of grades|======================================>
 
-                float sum = Maths + PPS + EE + Phy + softSkill;
-                float percentage = (sum / 500) * 100;
+                sum = Maths + PPS + EE + Phy + softSkill;
+                percentage = (sum / 500) * 100;
 
                 printf("Your overall percent is %f%% \n", percentage);
 
@@ -155,12 +154,12 @@ int main()
                 }
 
                 break;
-                // =====================================|To count number of student|==================================
+                // <=====================================|To count number of student|==================================>
             case 4:
                 printf("%d Students \n", count);
 
                 break;
-                //=================================================|To exit|============================================
+                // <=================================================|To exit|============================================>
             case 5:
                 exit(0);
 
@@ -179,4 +178,5 @@ int main()
     {
         printf("Invalid User-Id or Password");
     }
+    return 0;
 }
