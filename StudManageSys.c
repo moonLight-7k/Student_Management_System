@@ -44,7 +44,7 @@ int main()
             {
 
                 // <====================================|Declaring var fot students details|====================================>
-                char sName[50], regNo[50], doB[50], fName[50], mName[50], add[50], crsEnrol[50], dofEnrol[50];
+                char sName[50],  sName1[50],regNo[50], doB[50], fName[50], mName[50], add[50], crsEnrol[50], dofEnrol[50];
 
                 // <==========================================|Variable for Grades|=============================================>
                 float Maths, PPS, EE, Phy, softSkill, sum, percentage;
@@ -54,7 +54,7 @@ int main()
                 printf("\t\t---------------|Add Student Details|---------------\t\t\n");
 
                 printf("Name of the student:");
-                scanf("%*[^\n]%c", sName);
+                scanf("%s%s", sName,sName1);
 
                 printf("\nRegistration number:");
                 scanf("%s", regNo);
@@ -176,7 +176,7 @@ int main()
     }
     else
     {
-        printf("Invalid User-Id or Password");
+        printf("Invalid UserId or Password");
     }
     return 0;
 }
