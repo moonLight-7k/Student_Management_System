@@ -44,7 +44,7 @@ int main()
             {
 
                 // <====================================|Declaring var fot students details|====================================>
-                char sName[50],  sName1[50],regNo[50], doB[50], fName[50], mName[50], add[50], crsEnrol[50], dofEnrol[50];
+                char sName[50], sName1[50], regNo[50], doB[50], fName[50], mName[50], add[50], crsEnrol[50], dofEnrol[50];
 
                 // <==========================================|Variable for Grades|=============================================>
                 float Maths, PPS, EE, Phy, softSkill, sum, percentage;
@@ -54,7 +54,7 @@ int main()
                 printf("\t\t---------------|Add Student Details|---------------\t\t\n");
 
                 printf("Name of the student:");
-                scanf("%s%s", sName,sName1);
+                scanf("%s%s", sName, sName1);
 
                 printf("\nRegistration number:");
                 scanf("%s", regNo);
@@ -85,7 +85,7 @@ int main()
                 // <======================================|Preview students details|======================================>
 
                 printf("\n\n\xdb Details preview \xdb\n");
-                printf("\nName of the student: %s \n", sName);
+                printf("\nName of the student: %s %s \n", sName, sName1);
                 printf("\nRegistration number:%s\n", regNo);
                 printf("\nDate of birth:%s\n", doB);
                 printf("\nFather's name:%s\n", fName);
@@ -103,7 +103,7 @@ int main()
                 printf("\t\t---------------|Add student name and grade|---------------\t\t\n");
 
                 printf("Name of the student:");
-                scanf("%s", sName);
+                scanf("%s%s", sName, sName1);
 
                 printf("\nRegistration number:");
                 scanf("%s", regNo);
