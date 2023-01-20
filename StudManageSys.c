@@ -2,7 +2,20 @@
 #include <string.h>
 #include <conio.h>
 
+int addStudentDetails(void);
+int previewStudentDetails();
+
 void exit();
+
+// <========================================|Declaring variable (GLOABAL)|========================================>
+
+int count = 0;
+// <====================================|Declaring var fot students details|====================================>
+
+char sName[50], sName1[50], regNo[50], doB[50], fName[50], mName[50], add[50], crsEnrol[50], dofEnrol[50];
+// <==========================================|Variable for Grades|=============================================>
+
+float Maths, PPS, EE, Phy, softSkill, sum, percentage;
 
 int main()
 {
@@ -18,16 +31,14 @@ int main()
     printf("\nPassword:");
     scanf("%s", &pwd);
 
-    if (strcmp(userName, "KCCITM") == 0 && strcmp(pwd, "admin@123") == 0 || strcmp(userName, "root") == 0 && strcmp(pwd, "exit") == 0)
     // <=============================================|(strcmp) is used to compare string|=============================================>
+    if (strcmp(userName, "KCCITM") == 0 && strcmp(pwd, "admin@123") == 0 || strcmp(userName, "root") == 0 && strcmp(pwd, "exit") == 0)
 
     {
         int choice;
-        int count = 0;
 
         do
         {
-            // <========================================|Declaring variable (for HOME page)|========================================>
 
             // clrscr();
             //  <===================================|to clear the screen (only works in turbo C)|===================================>
@@ -42,42 +53,9 @@ int main()
             switch (opt)
             {
 
-                // <====================================|Declaring var fot students details|====================================>
-                char sName[50], sName1[50], regNo[50], doB[50], fName[50], mName[50], add[50], crsEnrol[50], dofEnrol[50];
-
-                // <==========================================|Variable for Grades|=============================================>
-                float Maths, PPS, EE, Phy, softSkill, sum, percentage;
-
-                // <===========================================|To Add student detail|===========================================>
             case 1:
-                printf("\t\t---------------|Add Student Details|---------------\t\t\n");
+                addStudentDetails();
 
-                printf("Name of the student:");
-                scanf("%s%s", sName, sName1);
-
-                printf("\nRegistration number:");
-                scanf("%s", regNo);
-
-                printf("\nDate of Birth:");
-                scanf("%s", doB);
-
-                printf("\nFather's name:");
-                scanf("%s", fName);
-
-                printf("\nMother's name:");
-                scanf("%s", mName);
-
-                printf("\nAddress:");
-                scanf("%s", add);
-
-                printf("\nCourse enrolled:");
-                scanf("%s", crsEnrol);
-
-                printf("\nDate of enrollment:");
-                scanf("%s", dofEnrol);
-
-                // <==========================================|To Count Number  Student|===========================================>
-                count++;
                 break;
 
             case 2:
@@ -178,4 +156,53 @@ int main()
         printf("Invalid UserId or Password");
     }
     return 0;
+}
+
+// <===========================================|To Add student detail|===========================================>
+
+int addStudentDetails(void)
+{
+    printf("\t\t---------------|Add Student Details|---------------\t\t\n");
+
+    printf("Name of the student:");
+    scanf("%s%s", sName, sName1);
+
+    printf("\nRegistration number:");
+    scanf("%s", regNo);
+
+    printf("\nDate of Birth:");
+    scanf("%s", doB);
+
+    printf("\nFather's name:");
+    scanf("%s", fName);
+
+    printf("\nMother's name:");
+    scanf("%s", mName);
+
+    printf("\nAddress:");
+    scanf("%s", add);
+
+    printf("\nCourse enrolled:");
+    scanf("%s", crsEnrol);
+
+    printf("\nDate of enrollment:");
+    scanf("%s", dofEnrol);
+
+    // <==========================================|To Count Number  Student|===========================================>
+    count++;
+}
+
+// <======================================|Preview students details|======================================>
+int previewStudentDetails(void)
+{
+
+    printf("\n\n\xdb Details preview \xdb\n");
+    printf("\nName of the student: %s %s \n", sName, sName1);
+    printf("\nRegistration number:%s\n", regNo);
+    printf("\nDate of birth:%s\n", doB);
+    printf("\nFather's name:%s\n", fName);
+    printf("\nMother's name:%s\n", mName);
+    printf("\nAddress:%s\n", add);
+    printf("\nCourse enrolled:%s\n", crsEnrol);
+    printf("\nDate of enrollment:%s\n", dofEnrol);
 }
