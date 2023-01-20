@@ -3,12 +3,12 @@
 #include <conio.h>
 
 int addStudentDetails(void);
-int previewStudentDetails();
-int addStudentGrades();
-
+int previewStudentDetails(void);
+int addStudentGrades(void);
+int countStudents(void);
 void exit();
 
-// <========================================|Declaring variable (GLOABAL)|========================================>
+// <========================================|Declaring variable (GLOBAL)|========================================>
 
 int count = 0;
 // <====================================|Declaring var fot students details|====================================>
