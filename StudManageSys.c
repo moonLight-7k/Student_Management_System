@@ -59,17 +59,7 @@ int main()
                 break;
 
             case 2:
-                // <======================================|Preview students details|======================================>
-
-                printf("\n\n\xdb Details preview \xdb\n");
-                printf("\nName of the student: %s %s \n", sName, sName1);
-                printf("\nRegistration number:%s\n", regNo);
-                printf("\nDate of birth:%s\n", doB);
-                printf("\nFather's name:%s\n", fName);
-                printf("\nMother's name:%s\n", mName);
-                printf("\nAddress:%s\n", add);
-                printf("\nCourse enrolled:%s\n", crsEnrol);
-                printf("\nDate of enrollment:%s\n", dofEnrol);
+                previewStudentDetails();
 
                 break;
 
