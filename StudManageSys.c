@@ -4,6 +4,7 @@
 
 int addStudentDetails(void);
 int previewStudentDetails();
+int addStudentGrades();
 
 void exit();
 
@@ -65,60 +66,7 @@ int main()
 
             case 3:
 
-                // <======================================|Preview students Grade|======================================>
-
-                printf("\t\t---------------|Add student name and grade|---------------\t\t\n");
-
-                printf("Name of the student:");
-                scanf("%s%s", sName, sName1);
-
-                printf("\nRegistration number:");
-                scanf("%s", regNo);
-
-                printf("\t\t---------------|Add Student Marks(Out of 100)|---------------\t\t\n");
-
-                printf("Maths:");
-                scanf("%f", &Maths);
-
-                printf("PPS:");
-                scanf("%f", &PPS);
-
-                printf("EE:");
-                scanf("%f", &EE);
-
-                printf("Physics:");
-                scanf("%f", &Phy);
-
-                printf("Soft Skill:");
-                scanf("%f", &softSkill);
-
-                // <===========================================|Calculation of grades|======================================>
-
-                sum = Maths + PPS + EE + Phy + softSkill;
-                percentage = (sum / 500) * 100;
-
-                printf("Your overall percent is %f%% \n", percentage);
-
-                if (percentage >= 95 && percentage < 100)
-                {
-                    printf("Your Grade: O (Outstanding) \n");
-                }
-                else if (percentage < 95 && percentage >= 90)
-                {
-                    printf("Your Grade: A+ \n");
-                }
-                else if (percentage >= 80 && percentage < 90)
-                {
-                    printf("Your Grade: A \n");
-                }
-                else if (percentage < 80 && percentage <= 70)
-                {
-                    printf("Your Grade: B+ \n");
-                }
-                else if (percentage < 70)
-                {
-                    printf("Your Grade: C \n");
-                }
+                addStudentGrades();
 
                 break;
                 // <=====================================|To count number of student|==================================>
@@ -195,4 +143,63 @@ int previewStudentDetails(void)
     printf("\nAddress:%s\n", add);
     printf("\nCourse enrolled:%s\n", crsEnrol);
     printf("\nDate of enrollment:%s\n", dofEnrol);
+}
+
+// <======================================|Preview students Grade|======================================>
+
+int addStudentGrades(void)
+{
+
+    printf("\t\t---------------|Add student name and grade|---------------\t\t\n");
+
+    printf("Name of the student:");
+    scanf("%s%s", sName, sName1);
+
+    printf("\nRegistration number:");
+    scanf("%s", regNo);
+
+    printf("\t\t---------------|Add Student Marks(Out of 100)|---------------\t\t\n");
+
+    printf("Maths:");
+    scanf("%f", &Maths);
+
+    printf("PPS:");
+    scanf("%f", &PPS);
+
+    printf("EE:");
+    scanf("%f", &EE);
+
+    printf("Physics:");
+    scanf("%f", &Phy);
+
+    printf("Soft Skill:");
+    scanf("%f", &softSkill);
+
+    // <===========================================|Calculation of grades|======================================>
+
+    sum = Maths + PPS + EE + Phy + softSkill;
+    percentage = (sum / 500) * 100;
+
+    printf("Your overall percent is %f%% \n", percentage);
+
+    if (percentage >= 95 && percentage < 100)
+    {
+        printf("Your Grade: O (Outstanding) \n");
+    }
+    else if (percentage < 95 && percentage >= 90)
+    {
+        printf("Your Grade: A+ \n");
+    }
+    else if (percentage >= 80 && percentage < 90)
+    {
+        printf("Your Grade: A \n");
+    }
+    else if (percentage < 80 && percentage <= 70)
+    {
+        printf("Your Grade: B+ \n");
+    }
+    else if (percentage < 70)
+    {
+        printf("Your Grade: C \n");
+    }
 }
