@@ -20,10 +20,10 @@ float Maths, PPS, EE, Phy, softSkill, sum, percentage;
 
 int main()
 {
-    // <=============================|Declaring Variable for username and password (GLOBAL VARIABLE)|==============================>
+    // <====================|Declaring Variable for username and password (GLOBAL VARIABLE)|=====================>
     char userName[50], pwd[50];
 
-    // <===========================================|(\xdb) is used to display better UI|===========================================>
+    // <==================================|(\xdb) is used to display better UI|==================================>
     printf("\n \xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb LOGIN \xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\n ");
 
     printf("Username:");
@@ -32,7 +32,7 @@ int main()
     printf("\nPassword:");
     scanf("%s", &pwd);
 
-    // <=============================================|(strcmp) is used to compare string|=============================================>
+    // <==================================|(strcmp) is used to compare string|==================================>
     if (strcmp(userName, "KCCITM") == 0 && strcmp(pwd, "admin@123") == 0 || strcmp(userName, "root") == 0 && strcmp(pwd, "exit") == 0)
 
     {
@@ -42,14 +42,14 @@ int main()
         {
 
             // clrscr();
-            //  <===================================|to clear the screen (only works in turbo C)|===================================>
+            //  <=========================|to clear the screen (only works in turbo C)|=========================>
             int opt;
 
             printf("\n 1.Add Student Details\n 2.Preview student details \n 3.Grades of the students\n 4.Total Number of students\n 5. Exit\n");
 
             scanf("%d", &opt);
 
-            // <============================================|Mani Menu in switch case|============================================>
+            // <===================================|Mani Menu in switch case|===================================>
 
             switch (opt)
             {
@@ -76,7 +76,7 @@ int main()
                 break;
 
             case 5:
-                // <=================================================|To exit|============================================>
+                // <============================================|To exit|=======================================>
                 exit(0);
 
                 break;
@@ -127,7 +127,7 @@ int addStudentDetails(void)
     printf("\nDate of enrollment:");
     scanf("%s", dofEnrol);
 
-    // <==========================================|To Count Number  Student|===========================================>
+    // <=====================================|To Count Number Of Student|======================================>
     count++;
 }
 
