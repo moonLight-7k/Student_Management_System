@@ -71,7 +71,7 @@ int main()
                 break;
                 // <=====================================|To count number of student|==================================>
             case 4:
-                printf("%d Students \n", count);
+                countStudents();
 
                 break;
                 // <=================================================|To exit|============================================>
@@ -150,7 +150,7 @@ int previewStudentDetails(void)
 int addStudentGrades(void)
 {
 
-    printf("\t\t---------------|Add student name and grade|---------------\t\t\n");
+    printf("\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb Add student name and grade \xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\n");
 
     printf("Name of the student:");
     scanf("%s%s", sName, sName1);
@@ -158,7 +158,7 @@ int addStudentGrades(void)
     printf("\nRegistration number:");
     scanf("%s", regNo);
 
-    printf("\t\t---------------|Add Student Marks(Out of 100)|---------------\t\t\n");
+    printf("\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb Add Student Marks(Out of 100) \xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb\n");
 
     printf("Maths:");
     scanf("%f", &Maths);
@@ -202,4 +202,10 @@ int addStudentGrades(void)
     {
         printf("Your Grade: C \n");
     }
+}
+
+int countStudents()
+{
+    printf("\xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb Number Of Students \xdb\xdb\xdb\xdb\xdb\xdb\xdb\xdb");
+    printf("%d Students \n", count);
 }
