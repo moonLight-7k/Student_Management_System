@@ -18,7 +18,7 @@ char sName[50], sName1[50], regNo[50], doB[50], fName[50], mName[50], add[50], c
 
 float Maths, PPS, EE, Phy, softSkill, sum, percentage;
 
-int main()
+int main(void)
 {
     // <====================|Declaring Variable for username and password (GLOBAL VARIABLE)|=====================>
     char userName[50], pwd[50];
@@ -94,7 +94,7 @@ int main()
     {
         printf("Invalid UserId or Password");
     }
-    return 0;
+  
 }
 
 // <===========================================|To Add student detail|===========================================>
