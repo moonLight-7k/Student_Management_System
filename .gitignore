@@ -1,10 +1,10 @@
-\.gitignore
-\test.c
-\test01.c
-\a.exe
-\tasks.json
-\.vscode/c_cpp_properties.json
-\.vscode
+.gitignore
+test.c
+test01.c
+a.exe
+tasks.json
+.vscode/c_cpp_properties.json
+.vscode
 case1.c
 case2.c
 case3.c
