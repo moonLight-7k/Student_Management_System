@@ -13,7 +13,8 @@ void exit();
 int count = 0;
 // <====================================|Declaring var fot students details|====================================>
 
-char sName[50], sName1[50], regNo[50], doB[50], fName[50], mName[50], add[50], crsEnrol[50], dofEnrol[50];
+char sName[100], sName1[100], regNo[100], doB[100], fName[100], mName[100], add[100], crsEnrol[100], dofEnrol[10
+                                                                                                              0];
 // <==========================================|Variable for Grades|=============================================>
 
 float Maths, PPS, EE, Phy, softSkill, sum, percentage;
