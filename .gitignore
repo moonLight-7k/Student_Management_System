@@ -1,6 +1,3 @@
-.gitignore
-test.c
-test01.c
 a.exe
 tasks.json
 .vscode/c_cpp_properties.json
